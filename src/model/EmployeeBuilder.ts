@@ -46,9 +46,6 @@ class EmployeeBuilder {
   }
 
   build(): Employee {
-    const storage = new Storage(DatabaseType.Emplyoee);
-    storage.addData(this.employee.toJSON());
-
     return this.employee;
   }
 }

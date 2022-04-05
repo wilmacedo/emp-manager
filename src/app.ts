@@ -13,6 +13,7 @@ builder.setWorkArea(WorkArea.Development);
 builder.setInTime(new Date().getTime()).setOutTime(new Date().getTime());
 
 const employee = builder.build();
+storage.addData(employee.toJSON());
 console.log("Employee created: ", employee);
 
 // Read
