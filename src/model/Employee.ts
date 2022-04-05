@@ -1,21 +1,7 @@
-import { IEmployee } from "../types";
+import { Gender, IEmployee, WorkArea } from "../types";
+import Person from "./Person";
 
-export enum Gender {
-  Male,
-  Female,
-}
-
-export enum WorkArea {
-  Development,
-  Support,
-  RH,
-}
-
-class Employee {
-  firstName: string;
-  lastName: string;
-  age: number;
-  gender: Gender;
+class Employee extends Person {
   workArea: WorkArea;
   inTime: number;
   outTime: number;
@@ -29,10 +15,7 @@ class Employee {
     inTime: number = 0,
     outTime: number = 0
   ) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.age = age;
-    this.gender = gender;
+    super(firstName, lastName, age, gender);
     this.workArea = workArea;
     this.inTime = inTime;
     this.outTime = outTime;

@@ -1,5 +1,3 @@
-import { Gender, WorkArea } from "../model/Employee";
-
 export interface IEmployee {
   fistName: string;
   lastName: string;
@@ -8,4 +6,20 @@ export interface IEmployee {
   workArea: WorkArea;
   inTime: number;
   outTime: number;
+}
+
+export enum DatabaseType {
+  Emplyoee = "employee",
+  Journay = "journay",
+}
+
+export enum Gender {
+  Male,
+  Female,
+}
+
+export enum WorkArea {
+  Development,
+  Support,
+  RH,
 }

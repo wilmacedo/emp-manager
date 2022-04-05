@@ -1,7 +1,6 @@
-import { Gender, WorkArea } from "./model/Employee";
 import EmployeeBuilder from "./model/EmployeeBuilder";
-import Storage, { DatabaseType } from "./storage";
-import { IEmployee } from "./types";
+import Storage from "./storage";
+import { DatabaseType, Gender, IEmployee, WorkArea } from "./types";
 
 const storage = new Storage(DatabaseType.Emplyoee);
 

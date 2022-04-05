@@ -1,5 +1,6 @@
-import Storage, { DatabaseType } from "../storage";
-import Employee, { Gender, WorkArea } from "./Employee";
+import Storage from "../storage";
+import { DatabaseType, Gender, WorkArea } from "../types";
+import Employee from "./Employee";
 
 // GoF Builder pattern
 class EmployeeBuilder {

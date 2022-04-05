@@ -1,12 +1,6 @@
 import path from "path";
 import fs from "fs";
-import { IEmployee } from "../types";
-import { decode } from "punycode";
-
-export enum DatabaseType {
-  Emplyoee = "employee",
-  Journay = "journay",
-}
+import { DatabaseType, IEmployee } from "../types";
 
 class Storage {
   private dbType: DatabaseType;
